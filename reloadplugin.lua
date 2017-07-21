@@ -19,7 +19,7 @@ end
 -- Copyright 2014 Paul Kulchenko, ZeroBrane LLC;
 local function analyze(filePath)
 	local warn, err = AnalyzeFile(filePath)
-	local errors, warnings = 0
+	local errors, warnings = 0, 0
 	if err then
 		print(err)
 		errors = errors + 1
